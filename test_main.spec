@@ -4,11 +4,11 @@ block_cipher = None
 
 
 a = Analysis(['test_main.py'],
-             pathex=['E:\\project\\¶Á¿¨Æ÷Éè±¸³ÌÐò\\python¶ÁÐ´³ÌÐò'],
+             pathex=['.\\'],
              binaries=[],
-             datas=[],
+             datas=[('.\\api', '.\\api')],
              hiddenimports=[],
-             hookspath=[],
+             hookspath=['.\\api'],
              runtime_hooks=[],
              excludes=[],
              win_no_prefer_redirects=False,
@@ -19,15 +19,16 @@ pyz = PYZ(a.pure, a.zipped_data,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='test_main',
+          name='read_card',
           debug=False,
           strip=False,
           upx=True,
-          console=True )
+          icon='.\\read_card.ico',
+          console=False )
 coll = COLLECT(exe,
                a.binaries,
                a.zipfiles,
                a.datas,
                strip=False,
                upx=True,
-               name='test_main')
+               name='read_card')

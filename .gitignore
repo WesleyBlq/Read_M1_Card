@@ -1,2 +1,4 @@
 __pycache__/
 read_card/
+dist/
+build/
