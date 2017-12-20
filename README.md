@@ -1,4 +1,5 @@
-# python_read_card_program
+# Read_M1_Card
 充电桩M1卡读卡器程序
+-----------------------
 
-练手python
+
